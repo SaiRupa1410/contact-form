@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        
+        <label>Name:</label>
+        <input type="text" id="name">
+        <div class="error" id="nameError"></div>
+
+        <label>Email:</label>
+        <input type="text" id="email">
+        <div class="error" id="emailError"></div>
+
+        <label>Phone Number:</label>
+        <input type="text" id="phone">
+        <div class="error" id="phoneError"></div>
+
+        <label>Subject:</label>
+        <input type="text" id="subject">
+        <div class="error" id="subjectError"></div>
+
+        <label>Category:</label>
+        <select id="category">
+            <option value="">--Select Category--</option>
+            <option value="feedback">Feedback</option>
+            <option value="inquiry">Inquiry</option>
+            <option value="support">Support</option>
+        </select>
+        <div class="error" id="categoryError"></div>
+
+        <label>
+            <input type="checkbox" id="agree">
+            I agree to the terms and conditions
+        </label>
+        <div class="error" id="agreeError"></div>
+
+        <label>Message:</label>
+        <textarea id="message"></textarea>
+        <div class="error" id="messageError"></div>
+
+        <button type="submit">Submit</button>
+        <div class="success" id="successMsg"></div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
